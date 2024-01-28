@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/MyArchive/01_Aktuelle_Projekte/ESP32/LB_device_A/build/CMakeFiles/bootloader
+C:/MyArchive/01_Aktuelle_Projekte/ESP32/LB_device_A/build/CMakeFiles/bootloader.rule
+C:/MyArchive/01_Aktuelle_Projekte/ESP32/LB_device_A/build/CMakeFiles/bootloader-complete.rule
+C:/MyArchive/01_Aktuelle_Projekte/ESP32/LB_device_A/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/MyArchive/01_Aktuelle_Projekte/ESP32/LB_device_A/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/MyArchive/01_Aktuelle_Projekte/ESP32/LB_device_A/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/MyArchive/01_Aktuelle_Projekte/ESP32/LB_device_A/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/MyArchive/01_Aktuelle_Projekte/ESP32/LB_device_A/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/MyArchive/01_Aktuelle_Projekte/ESP32/LB_device_A/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/MyArchive/01_Aktuelle_Projekte/ESP32/LB_device_A/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
