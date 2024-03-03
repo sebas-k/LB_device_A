@@ -1,0 +1,697 @@
+[0;32mI (124) esp_image: segment 1: paddr=00031510 vaddr=3fc97cESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42008045
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x16e0
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2eb0
+entry 0x403c9908
+[0;32mI (27) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jan 28 2024 23:12:35[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.1[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c080020 size=214e8h (136424) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=00031510 vaddr=3fc97c00 size=04444h ( 17476) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0003595c vaddr=40374000 size=0a6bch ( 42684) load[0m
+[0;32mI (139) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=7cae4h (510692) map[0m
+[0;32mI (231) esp_image: segment 4: paddr=000bcb0c vaddr=4037e6bc size=0944ch ( 37964) load[0m
+[0;32mI (248) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (248) boot: Disabling RNG early entropy source...[0m
+[0;32mI (260) cpu_start: Multicore app[0m
+[0;32mI (260) cpu_start: Pro cpu up.[0m
+[0;32mI (260) cpu_start: Starting app cpu, entry point is 0x403754ec[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (278) cpu_start: Pro cpu start user code[0m
+[0;32mI (278) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (279) cpu_start: Application information:[0m
+[0;32mI (281) cpu_start: Project name:     LB_device_A[0m
+[0;32mI (287) cpu_start: App version:      1[0m
+[0;32mI (291) cpu_start: Compile time:     Jan 28 2024 23:11:26[0m
+[0;32mI (297) cpu_start: ELF file SHA256:  6d02280b9ea5ad5e...[0m
+[0;32mI (303) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (308) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (313) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (318) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (322) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (330) heap_init: At 3FC9FA70 len 00049CA0 (295 KiB): DRAM[0m
+[0;32mI (336) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (342) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (349) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (356) spi_flash: detected chip: gd[0m
+[0;32mI (359) spi_flash: flash io: dio[0m
+[0;33mW (363) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (376) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (383) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (390) app_start: Starting scheduler on CPU0[0m
+[0;32mI (395) app_start: Starting scheduler on CPU1[0m
+[0;32mI (395) main_task: Started on CPU0[0m
+[0;32mI (405) main_task: Calling app_main()[0m
+[0;32mI (405) gpio: GPIO[0]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (415) gpio: GPIO[17]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (425) gpio: GPIO[45]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (435) gpio: GPIO[46]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (445) gpio: GPIO[48]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (455) LB_device_A: GPIO LED config - done[0m
+[0;32mI (455) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+[0;32mI (465) LB_device_A: GPIO interrupt config - done[0m
+[0;32mI (475) LB_device_A: Create RMT TX channel[0m
+[0;32mI (475) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (485) LB_device_A: Create RMT TX channel - done[0m
+[0;32mI (495) LB_device_A: Modulate carrier to TX channel[0m
+[0;32mI (495) LB_device_A: Modulate carrier to TX channel - done[0m
+[0;32mI (505) LB_device_A: Set channel to invinity[0m
+[0;32mI (515) LB_device_A: Set channel to invinity - done[0m
+[0;32mI (515) LB_device_A: Set encoder and start[0m
+[0;32mI (525) LB_device_A: Set encoder and start - done[0m
+[0;32mI (525) LB_device_A: Wifi Config[0m
+[0;32mI (545) pp: pp rom version: e7ae62f[0m
+[0;32mI (545) net80211: net80211 rom version: e7ae62f[0m
+I (555) wifi:wifi driver task: 3fca9d08, prio:23, stack:6656, core=0
+I (555) wifi:wifi firmware version: ce9244d
+I (555) wifi:wifi certification version: v7.0
+I (555) wifi:config NVS flash: enabled
+I (565) wifi:config nano formating: disabled
+I (565) wifi:Init data frame dynamic rx buffer num: 32
+I (565) wifi:Init management frame dynamic rx buffer num: 32
+I (575) wifi:Init management short buffer num: 32
+I (575) wifi:Init dynamic tx buffer num: 32
+I (585) wifi:Init static tx FG buffer num: 2
+I (585) wifi:Init static rx buffer size: 1600
+I (595) wifi:Init static rx buffer num: 10
+I (595) wifi:Init dynamic rx buffer num: 32
+[0;32mI (595) wifi_init: rx ba win: 6[0m
+[0;32mI (605) wifi_init: tcpip mbox: 32[0m
+[0;32mI (605) wifi_init: udp mbox: 6[0m
+[0;32mI (615) wifi_init: tcp mbox: 6[0m
+[0;32mI (615) wifi_init: tcp tx win: 5744[0m
+[0;32mI (615) wifi_init: tcp rx win: 5744[0m
+[0;32mI (625) wifi_init: tcp mss: 1440[0m
+[0;32mI (625) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (635) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (635) phy_init: phy_version 601,98f2a71,Jun 29 2023,09:58:12[0m
+I (675) wifi:mode : sta (34:85:18:7a:f2:d4)
+I (685) wifi:enable tsf
+I (685) wifi:ifx:0, phymode(new:0x3, nvs:0x3)
+I (685) wifi:enable tsf
+I (685) ESPNOW: espnow [version: 1.0] init
+[0;32mI (1195) LB_device_A: MS since started the Timer 119558[0m
+[0;32mI (1695) LB_device_A: Test break - done[0m
+[0;32mI (3535) LB_device_A: MS since started the Timer 121899[0m
+[0;32mI (3705) LB_device_A: Test break - done[0m
+[0;32mI (5525) LB_device_A: Sync sending - done[0m
+[0;32mI (6485) LB_device_A: MS since started the Timer 5952[0m
+[0;32mI (6715) LB_device_A: Test break - done[0m
+[0;32mI (10525) LB_device_A: Sync sending - done[0m
+[0;32mI (10775) LB_device_A: MS since started the Timer 10248[0m
+[0;32mI (11725) LB_device_A: Test break - done[0m
+[0;32mI (13315) LB_device_A: MS since started the Timer 12782[0m
+[0;32mI (13735) LB_device_A: Test break - done[0m
+[0;32mI (15525) LB_device_A: Sync sending - done[0m
+[0;32mI (19535) LB_device_A: MS since started the Timer 19008[0m
+[0;32mI (19745) LB_device_A: Test break - done[0m
+[0;32mI (20525) LB_device_A: Sync sending - done[0m
+[0;32mI (21475) LB_device_A: MS since started the Timer 20942[0m
+[0;32mI (21755) LB_device_A: Test break - done[0m
+[0;32mI (25525) LB_device_A: Sync sending - done[0m
+[0;32mI (26235) LB_device_A: MS since started the Timer 25704[0m
+[0;32mI (26765) LB_device_A: Test break - done[0m
+[0;32mI (27615) LB_device_A: MS since started the Timer 27088[0m
+[0;32mI (27775) LB_device_A: Test break - done[0m
+[0;32mI (28665) LB_device_A: MS since started the Timer 28137[0m
+[0;32mI (28785) LB_device_A: Test break - done[0m
+[0;32mI (30525) LB_device_A: Sync sending - done[0m
+[0;32mI (35525) LB_device_A: Sync sending - done[0m
+[0;32mI (40525) LB_device_A: Sync sending - done[0m
+[0;32mI (45525) LB_device_A: Sync sending - done[0m
+[0;32mI (50525) LB_device_A: Sync sending - done[0m
+[0;32mI (54115) LB_device_A: MS since started the Timer 53589[0m
+[0;32mI (54795) LB_device_A: Test break - done[0m
+[0;32mI (55525) LB_device_A: Sync sending - done[0m
+[0;32mI (60525) LB_device_A: Sync sending - done[0m
+[0;32mI (65435) LB_device_A: MS since started the Timer 64904[0m
+[0;32mI (65525) LB_device_A: Sync sending - done[0m
+[0;32mI (65805) LB_device_A: Test break - done[0m
+[0;32mI (68535) LB_device_A: MS since started the Timer 68005[0m
+[0;32mI (68815) LB_device_A: Test break - done[0m
+[0;32mI (69395) LB_device_A: MS since started the Timer 68869[0m
+[0;32mI (69825) LB_device_A: Test break - done[0m
+[0;32mI (70415) LB_device_A: MS since started the Timer 69888[0m
+[0;32mI (70525) LB_device_A: Sync sending - done[0m
+[0;32mI (70835) LB_device_A: Test break - done[0m
+[0;32mI (75215) LB_device_A: MS since started the Timer 74691[0m
+[0;32mI (75525) LB_device_A: Sync sending - done[0m
+[0;32mI (75845) LB_device_A: Test break - done[0m
+[0;32mI (79195) LB_device_A: MS since started the Timer 78662[0m
+[0;32mI (79855) LB_device_A: Test break - done[0m
+[0;32mI (80525) LB_device_A: Sync sending - done[0m
+[0;32mI (80605) LB_device_A: MS since started the Timer 80074[0m
+[0;32mI (80865) LB_device_A: Test break - done[0m
+[0;32mI (81485) LB_device_A: MS since started the Timer 80955[0m
+[0;32mI (81875) LB_device_A: Test break - done[0m
+[0;32mI (85525) LB_device_A: Sync sending - done[0m
+[0;32mI (90525) LB_device_A: Sync sending - done[0m
+[0;32mI (91235) LB_device_A: MS since started the Timer 90710[0m
+[0;32mI (91885) LB_device_A: Test break - done[0m
+[0;32mI (92825) LB_device_A: MS since started the Timer 92292[0m
+[0;32mI (92895) LB_device_A: Test break - done[0m
+[0;32mI (95525) LB_device_A: Sync sending - done[0m
+[0;32mI (100525) LB_device_A: Sync sending - done[0m
+[0;32mI (102445) LB_device_A: MS since started the Timer 101916[0m
+[0;32mI (102905) LB_device_A: Test break - done[0m
+[0;32mI (105525) LB_device_A: Sync sending - done[0m
+[0;32mI (110525) LB_device_A: Sync sending - done[0m
+[0;32mI (115525) LB_device_A: Sync sending - done[0m
+[0;32mI (116815) LB_device_A: MS since started the Timer 116289[0m
+[0;32mI (116915) LB_device_A: Test break - done[0m
+[0;32mI (120535) LB_device_A: Sync sending - done[0m
+[0;32mI (125525) LB_device_A: Sync sending - done[0m
+[0;32mI (130525) LB_device_A: Sync sending - done[0m
+[0;32mI (135525) LB_device_A: Sync sending - done[0m
+[0;32mI (140525) LB_device_A: Sync sending - done[0m
+[0;32mI (145525) LB_device_A: Sync sending - done[0m
+[0;32mI (150525) LB_device_A: Sync sending - done[0m
+[0;32mI (155525) LB_device_A: Sync sending - done[0m
+[0;32mI (160525) LB_device_A: Sync sending - done[0m
+[0;32mI (165525) LB_device_A: Sync sending - done[0m
+[0;32mI (170525) LB_device_A: Sync sending - done[0m
+[0;32mI (175535) LB_device_A: Sync sending - done[0m
+[0;32mI (180525) LB_device_A: Sync sending - done[0m
+[0;32mI (185525) LB_device_A: Sync sending - done[0m
+[0;32mI (190525) LB_device_A: Sync sending - done[0m
+[0;32mI (195525) LB_device_A: Sync sending - done[0m
+[0;32mI (200525) LB_device_A: Sync sending - done[0m
+[0;32mI (205525) LB_device_A: Sync sending - done[0m
+[0;32mI (210525) LB_device_A: Sync sending - done[0m
+[0;32mI (215525) LB_device_A: Sync sending - done[0m
+[0;32mI (220525) LB_device_A: Sync sending - done[0m
+[0;32mI (225525) LB_device_A: Sync sending - done[0m
+[0;32mI (230525) LB_device_A: Sync sending - done[0m
+[0;32mI (235525) LB_device_A: Sync sending - done[0m
+[0;32mI (240525) LB_device_A: Sync sending - done[0m
+[0;32mI (245525) LB_device_A: Sync sending - done[0m
+[0;32mI (250525) LB_device_A: Sync sending - done[0m
+[0;32mI (255525) LB_device_A: Sync sending - done[0m
+[0;32mI (260525) LB_device_A: Sync sending - done[0m
+[0;32mI (263385) LB_device_A: MS since started the Timer 262858[0m
+[0;32mI (263925) LB_device_A: Test break - done[0m
+[0;32mI (265525) LB_device_A: Sync sending - done[0m
+[0;32mI (270525) LB_device_A: Sync sending - done[0m
+[0;32mI (275525) LB_device_A: Sync sending - done[0m
+[0;32mI (280525) LB_device_A: Sync sending - done[0m
+[0;32mI (285525) LB_device_A: Sync sending - done[0m
+[0;32mI (290415) LB_device_A: MS since started the Timer 289888[0m
+[0;32mI (290525) LB_device_A: Sync sending - done[0m
+[0;32mI (290935) LB_device_A: Test break - done[0m
+[0;32mI (295535) LB_device_A: Sync sending - done[0m
+[0;32mI (300525) LB_device_A: Sync sending - done[0m
+[0;32mI (305525) LB_device_A: Sync sending - done[0m
+[0;32mI (310525) LB_device_A: Sync sending - done[0m
+[0;32mI (315525) LB_device_A: Sync sending - done[0m
+[0;32mI (320525) LB_device_A: Sync sending - done[0m
+[0;32mI (325525) LB_device_A: Sync sending - done[0m
+[0;32mI (330525) LB_device_A: Sync sending - done[0m
+[0;32mI (335525) LB_device_A: Sync sending - done[0m
+[0;32mI (340525) LB_device_A: Sync sending - done[0m
+[0;32mI (345525) LB_device_A: Sync sending - done[0m
+[0;32mI (350525) LB_device_A: Sync sending - done[0m
+[0;32mI (355525) LB_device_A: Sync sending - done[0m
+[0;32mI (360525) LB_device_A: Sync sending - done[0m
+[0;32mI (365525) LB_device_A: Sync sending - done[0m
+[0;32mI (370525) LB_device_A: Sync sending - done[0m
+[0;32mI (375525) LB_device_A: Sync sending - done[0m
+[0;32mI (380525) LB_device_A: Sync sending - done[0m
+[0;32mI (385525) LB_device_A: Sync sending - done[0m
+[0;32mI (390525) LB_device_A: Sync sending - done[0m
+[0;32mI (395525) LB_device_A: Sync sending - done[0m
+[0;32mI (400525) LB_device_A: Sync sending - done[0m
+[0;32mI (405525) LB_device_A: Sync sending - done[0m
+[0;32mI (410525) LB_device_A: Sync sending - done[0m
+[0;32mI (415525) LB_device_A: Sync sending - done[0m
+[0;32mI (420525) LB_device_A: Sync sending - done[0m
+[0;32mI (425525) LB_device_A: Sync sending - done[0m
+[0;32mI (430525) LB_device_A: Sync sending - done[0m
+[0;32mI (435525) LB_device_A: Sync sending - done[0m
+[0;32mI (440525) LB_device_A: Sync sending - done[0m
+[0;32mI (445525) LB_device_A: Sync sending - done[0m
+[0;32mI (450525) LB_device_A: Sync sending - done[0m
+[0;32mI (455525) LB_device_A: Sync sending - done[0m
+[0;32mI (460525) LB_device_A: Sync sending - done[0m
+[0;32mI (465525) LB_device_A: Sync sending - done[0m
+[0;32mI (470535) LB_device_A: Sync sending - done[0m
+[0;32mI (475525) LB_device_A: Sync sending - done[0m
+[0;32mI (480525) LB_device_A: Sync sending - done[0m
+[0;32mI (485525) LB_device_A: Sync sending - done[0m
+[0;32mI (490525) LB_device_A: Sync sending - done[0m
+[0;32mI (495525) LB_device_A: Sync sending - done[0m
+[0;32mI (500525) LB_device_A: Sync sending - done[0m
+[0;32mI (505525) LB_device_A: Sync sending - done[0m
+[0;32mI (510525) LB_device_A: Sync sending - done[0m
+[0;32mI (515525) LB_device_A: Sync sending - done[0m
+[0;32mI (518395) LB_device_A: MS since started the Timer 517870[0m
+[0;32mI (518945) LB_device_A: Test break - done[0m
+[0;32mI (520525) LB_device_A: Sync sending - done[0m
+[0;32mI (525525) LB_device_A: Sync sending - done[0m
+[0;32mI (530525) LB_device_A: Sync sending - done[0m
+[0;32mI (535525) LB_device_A: Sync sending - done[0m
+[0;32mI (540525) LB_device_A: Sync sending - done[0m
+[0;32mI (545525) LB_device_A: Sync sending - done[0m
+[0;32mI (550525) LB_device_A: Sync sending - done[0m
+[0;32mI (555525) LB_device_A: Sync sending - done[0m
+[0;32mI (560525) LB_device_A: Sync sending - done[0m
+[0;32mI (565525) LB_device_A: Sync sending - done[0m
+[0;32mI (570525) LB_device_A: Sync sending - done[0m
+[0;32mI (575525) LB_device_A: Sync sending - done[0m
+[0;32mI (580525) LB_device_A: Sync sending - done[0m
+[0;32mI (585525) LB_device_A: Sync sending - done[0m
+[0;32mI (590525) LB_device_A: Sync sending - done[0m
+[0;32mI (595525) LB_device_A: Sync sending - done[0m
+[0;32mI (600525) LB_device_A: Sync sending - done[0m
+[0;32mI (605525) LB_device_A: Sync sending - done[0m
+[0;32mI (610525) LB_device_A: Sync sending - done[0m
+[0;32mI (615525) LB_device_A: Sync sending - done[0m
+[0;32mI (620525) LB_device_A: Sync sending - done[0m
+[0;32mI (625525) LB_device_A: Sync sending - done[0m
+[0;32mI (630525) LB_device_A: Sync sending - done[0m
+[0;32mI (635525) LB_device_A: Sync sending - done[0m
+[0;32mI (640525) LB_device_A: Sync sending - done[0m
+[0;32mI (645535) LB_device_A: Sync sending - done[0m
+[0;32mI (650525) LB_device_A: Sync sending - done[0m
+[0;32mI (655525) LB_device_A: Sync sending - done[0m
+[0;32mI (660525) LB_device_A: Sync sending - done[0m
+[0;32mI (665525) LB_device_A: Sync sending - done[0m
+[0;32mI (670525) LB_device_A: Sync sending - done[0m
+[0;32mI (675525) LB_device_A: Sync sending - done[0m
+[0;32mI (679865) LB_device_A: MS since started the Timer 679332[0m
+[0;32mI (679955) LB_device_A: Test break - done[0m
+[0;32mI (680525) LB_device_A: Sync sending - done[0m
+[0;32mI (685525) LB_device_A: Sync sending - done[0m
+[0;32mI (686735) LB_device_A: MS since started the Timer 686201[0m
+[0;32mI (686965) LB_device_A: Test break - done[0m
+[0;32mI (690525) LB_device_A: Sync sending - done[0m
+[0;32mI (695525) LB_device_A: Sync sending - done[0m
+[0;32mI (697895) LB_device_A: MS since started the Timer 697369[0m
+[0;32mI (697975) LB_device_A: Test break - done[0m
+[0;32mI (697985) LB_device_A: MS since started the Timer 697454[0m
+[0;32mI (698985) LB_device_A: Test break - done[0m
+[0;32mI (699605) LB_device_A: MS since started the Timer 699080[0m
+[0;32mI (699995) LB_device_A: Test break - done[0m
+[0;32mI (700525) LB_device_A: Sync sending - done[0m
+[0;32mI (704085) LB_device_A: MS since started the Timer 703552[0m
+[0;32mI (705005) LB_device_A: Test break - done[0m
+[0;32mI (705525) LB_device_A: Sync sending - done[0m
+[0;32mI (705675) LB_device_A: MS since started the Timer 705150[0m
+[0;32mI (706015) LB_device_A: Test break - done[0m
+[0;32mI (708585) LB_device_A: MS since started the Timer 708055[0m
+[0;32mI (709025) LB_device_A: Test break - done[0m
+[0;32mI (710525) LB_device_A: Sync sending - done[0m
+[0;32mI (712865) LB_device_A: MS since started the Timer 712332[0m
+[0;32mI (713035) LB_device_A: Test break - done[0m
+[0;32mI (713545) LB_device_A: MS since started the Timer 713021[0m
+[0;32mI (714045) LB_device_A: Test break - done[0m
+[0;32mI (715435) LB_device_A: MS since started the Timer 714911[0m
+[0;32mI (715525) LB_device_A: Sync sending - done[0m
+[0;32mI (716055) LB_device_A: Test break - done[0m
+[0;32mI (720505) LB_device_A: MS since started the Timer 719973[0m
+[0;32mI (720525) LB_device_A: Sync sending - done[0m
+[0;32mI (721065) LB_device_A: Test break - done[0m
+[0;32mI (721605) LB_device_A: MS since started the Timer 721076[0m
+[0;32mI (722075) LB_device_A: Test break - done[0m
+[0;32mI (722605) LB_device_A: MS since started the Timer 722074[0m
+[0;32mI (723085) LB_device_A: Test break - done[0m
+[0;32mI (723585) LB_device_A: MS since started the Timer 723053[0m
+[0;32mI (724095) LB_device_A: Test break - done[0m
+[0;32mI (725525) LB_device_A: Sync sending - done[0m
+[0;32mI (730525) LB_device_A: Sync sending - done[0m
+[0;32mI (735525) LB_device_A: Sync sending - done[0m
+[0;32mI (740525) LB_device_A: Sync sending - done[0m
+[0;32mI (745525) LB_device_A: Sync sending - done[0m
+[0;32mI (750525) LB_device_A: Sync sending - done[0m
+[0;32mI (755525) LB_device_A: Sync sending - done[0m
+[0;32mI (760525) LB_device_A: Sync sending - done[0m
+[0;32mI (765525) LB_device_A: Sync sending - done[0m
+[0;32mI (770525) LB_device_A: Sync sending - done[0m
+[0;32mI (775525) LB_device_A: Sync sending - done[0m
+[0;32mI (780525) LB_device_A: Sync sending - done[0m
+[0;32mI (785525) LB_device_A: Sync sending - done[0m
+[0;32mI (790525) LB_device_A: Sync sending - done[0m
+[0;32mI (795525) LB_device_A: Sync sending - done[0m
+[0;32mI (800525) LB_device_A: Sync sending - done[0m
+[0;32mI (805525) LB_device_A: Sync sending - done[0m
+[0;32mI (810525) LB_device_A: Sync sending - done[0m
+[0;32mI (815525) LB_device_A: Sync sending - done[0m
+[0;32mI (820535) LB_device_A: Sync sending - done[0m
+[0;32mI (825525) LB_device_A: Sync sending - done[0m
+[0;32mI (830525) LB_device_A: Sync sending - done[0m
+[0;32mI (835525) LB_device_A: Sync sending - done[0m
+[0;32mI (840525) LB_device_A: Sync sending - done[0m
+[0;32mI (845525) LB_device_A: Sync sending - done[0m
+[0;32mI (850525) LB_device_A: Sync sending - done[0m
+[0;32mI (855525) LB_device_A: Sync sending - done[0m
+[0;32mI (860525) LB_device_A: Sync sending - done[0m
+[0;32mI (865525) LB_device_A: Sync sending - done[0m
+[0;32mI (870525) LB_device_A: Sync sending - done[0m
+[0;32mI (875525) LB_device_A: Sync sending - done[0m
+[0;32mI (880525) LB_device_A: Sync sending - done[0m
+[0;32mI (885525) LB_device_A: Sync sending - done[0m
+[0;32mI (890525) LB_device_A: Sync sending - done[0m
+[0;32mI (895525) LB_device_A: Sync sending - done[0m
+[0;32mI (900525) LB_device_A: Sync sending - done[0m
+[0;32mI (905525) LB_device_A: Sync sending - done[0m
+[0;32mI (910525) LB_device_A: Sync sending - done[0m
+[0;32mI (915525) LB_device_A: Sync sending - done[0m
+[0;32mI (920525) LB_device_A: Sync sending - done[0m
+[0;32mI (925525) LB_device_A: Sync sending - done[0m
+[0;32mI (930525) LB_device_A: Sync sending - done[0m
+[0;32mI (935525) LB_device_A: Sync sending - done[0m
+[0;32mI (940525) LB_device_A: Sync sending - done[0m
+[0;32mI (945525) LB_device_A: Sync sending - done[0m
+[0;32mI (950525) LB_device_A: Sync sending - done[0m
+[0;32mI (955525) LB_device_A: Sync sending - done[0m
+[0;32mI (960525) LB_device_A: Sync sending - done[0m
+[0;32mI (965525) LB_device_A: Sync sending - done[0m
+[0;32mI (970525) LB_device_A: Sync sending - done[0m
+[0;32mI (975525) LB_device_A: Sync sending - done[0m
+[0;32mI (980525) LB_device_A: Sync sending - done[0m
+[0;32mI (985525) LB_device_A: Sync sending - done[0m
+[0;32mI (990525) LB_device_A: Sync sending - done[0m
+[0;32mI (995535) LB_device_A: Sync sending - done[0m
+[0;32mI (1000525) LB_device_A: Sync sending - done[0m
+[0;32mI (1005525) LB_device_A: Sync sending - done[0m
+[0;32mI (1010525) LB_device_A: Sync sending - done[0m
+[0;32mI (1015525) LB_device_A: Sync sending - done[0m
+[0;32mI (1020525) LB_device_A: Sync sending - done[0m
+[0;32mI (1025525) LB_device_A: Sync sending - done[0m
+[0;32mI (1030525) LB_device_A: Sync sending - done[0m
+[0;32mI (1035525) LB_device_A: Sync sending - done[0m
+[0;32mI (1040525) LB_device_A: Sync sending - done[0m
+[0;32mI (1045525) LB_device_A: Sync sending - done[0m
+[0;32mI (1050525) LB_device_A: Sync sending - done[0m
+[0;32mI (1055525) LB_device_A: Sync sending - done[0m
+[0;32mI (1060525) LB_device_A: Sync sending - done[0m
+[0;32mI (1065525) LB_device_A: Sync sending - done[0m
+[0;32mI (1070525) LB_device_A: Sync sending - done[0m
+[0;32mI (1075525) LB_device_A: Sync sending - done[0m
+[0;32mI (1080525) LB_device_A: Sync sending - done[0m
+[0;32mI (1085525) LB_device_A: Sync sending - done[0m
+[0;32mI (1090525) LB_device_A: Sync sending - done[0m
+[0;32mI (1095525) LB_device_A: Sync sending - done[0m
+[0;32mI (1100525) LB_device_A: Sync sending - done[0m
+[0;32mI (1105525) LB_device_A: Sync sending - done[0m
+[0;32mI (1110525) LB_device_A: Sync sending - done[0m
+[0;32mI (1115525) LB_device_A: Sync sending - done[0m
+[0;32mI (1120525) LB_device_A: Sync sending - done[0m
+[0;32mI (1125525) LB_device_A: Sync sending - done[0m
+[0;32mI (1130525) LB_device_A: Sync sending - done[0m
+[0;32mI (1135525) LB_device_A: Sync sending - done[0m
+[0;32mI (1140525) LB_device_A: Sync sending - done[0m
+[0;32mI (1145525) LB_device_A: Sync sending - done[0m
+[0;32mI (1150525) LB_device_A: Sync sending - done[0m
+[0;32mI (1155525) LB_device_A: Sync sending - done[0m
+[0;32mI (1160525) LB_device_A: Sync sending - done[0m
+[0;32mI (1165525) LB_device_A: Sync sending - done[0m
+[0;32mI (1170535) LB_device_A: Sync sending - done[0m
+[0;32mI (1175525) LB_device_A: Sync sending - done[0m
+[0;32mI (1180525) LB_device_A: Sync sending - done[0m
+[0;32mI (1185525) LB_device_A: Sync sending - done[0m
+[0;32mI (1190525) LB_device_A: Sync sending - done[0m
+[0;32mI (1195525) LB_device_A: Sync sending - done[0m
+[0;32mI (1200525) LB_device_A: Sync sending - done[0m
+[0;32mI (1205525) LB_device_A: Sync sending - done[0m
+[0;32mI (1210525) LB_device_A: Sync sending - done[0m
+[0;32mI (1215525) LB_device_A: Sync sending - done[0m
+[0;32mI (1220525) LB_device_A: Sync sending - done[0m
+[0;32mI (1225525) LB_device_A: Sync sending - done[0m
+[0;32mI (1230525) LB_device_A: Sync sending - done[0m
+[0;32mI (1235525) LB_device_A: Sync sending - done[0m
+[0;32mI (1240525) LB_device_A: Sync sending - done[0m
+[0;32mI (1245525) LB_device_A: Sync sending - done[0m
+[0;32mI (1250525) LB_device_A: Sync sending - done[0m
+[0;32mI (1255525) LB_device_A: Sync sending - done[0m
+[0;32mI (1260525) LB_device_A: Sync sending - done[0m
+[0;32mI (1265525) LB_device_A: Sync sending - done[0m
+[0;32mI (1270525) LB_device_A: Sync sending - done[0m
+[0;32mI (1275525) LB_device_A: Sync sending - done[0m
+[0;32mI (1280525) LB_device_A: Sync sending - done[0m
+[0;32mI (1285525) LB_device_A: Sync sending - done[0m
+[0;32mI (1290525) LB_device_A: Sync sending - done[0m
+[0;32mI (1295525) LB_device_A: Sync sending - done[0m
+[0;32mI (1300525) LB_device_A: Sync sending - done[0m
+[0;32mI (1305525) LB_device_A: Sync sending - done[0m
+[0;32mI (1310525) LB_device_A: Sync sending - done[0m
+[0;32mI (1315525) LB_device_A: Sync sending - done[0m
+[0;32mI (1320525) LB_device_A: Sync sending - done[0m
+[0;32mI (1325525) LB_device_A: Sync sending - done[0m
+[0;32mI (1330525) LB_device_A: Sync sending - done[0m
+[0;32mI (1335525) LB_device_A: Sync sending - done[0m
+[0;32mI (1340525) LB_device_A: Sync sending - done[0m
+[0;32mI (1345535) LB_device_A: Sync sending - done[0m
+[0;32mI (1350525) LB_device_A: Sync sending - done[0m
+[0;32mI (1355525) LB_device_A: Sync sending - done[0m
+[0;32mI (1360525) LB_device_A: Sync sending - done[0m
+[0;32mI (1365525) LB_device_A: Sync sending - done[0m
+[0;32mI (1370525) LB_device_A: Sync sending - done[0m
+[0;32mI (1375525) LB_device_A: Sync sending - done[0m
+[0;32mI (1380525) LB_device_A: Sync sending - done[0m
+[0;32mI (1385525) LB_device_A: Sync sending - done[0m
+[0;32mI (1390525) LB_device_A: Sync sending - done[0m
+[0;32mI (1395525) LB_device_A: Sync sending - done[0m
+[0;32mI (1400525) LB_device_A: Sync sending - done[0m
+[0;32mI (1405525) LB_device_A: Sync sending - done[0m
+[0;32mI (1410525) LB_device_A: Sync sending - done[0m
+[0;32mI (1415525) LB_device_A: Sync sending - done[0m
+[0;32mI (1420525) LB_device_A: Sync sending - done[0m
+[0;32mI (1425525) LB_device_A: Sync sending - done[0m
+[0;32mI (1430525) LB_device_A: Sync sending - done[0m
+[0;32mI (1435525) LB_device_A: Sync sending - done[0m
+[0;32mI (1440525) LB_device_A: Sync sending - done[0m
+[0;32mI (1445525) LB_device_A: Sync sending - done[0m
+[0;32mI (1450525) LB_device_A: Sync sending - done[0m
+[0;32mI (1455525) LB_device_A: Sync sending - done[0m
+[0;32mI (1460525) LB_device_A: Sync sending - done[0m
+[0;32mI (1465525) LB_device_A: Sync sending - done[0m
+[0;32mI (1470525) LB_device_A: Sync sending - done[0m
+[0;32mI (1475525) LB_device_A: Sync sending - done[0m
+[0;32mI (1480525) LB_device_A: Sync sending - done[0m
+[0;32mI (1485525) LB_device_A: Sync sending - done[0m
+[0;32mI (1490525) LB_device_A: Sync sending - done[0m
+[0;32mI (1495525) LB_device_A: Sync sending - done[0m
+[0;32mI (1500525) LB_device_A: Sync sending - done[0m
+[0;32mI (1505525) LB_device_A: Sync sending - done[0m
+[0;32mI (1510525) LB_device_A: Sync sending - done[0m
+[0;32mI (1515525) LB_device_A: Sync sending - done[0m
+[0;32mI (1520535) LB_device_A: Sync sending - done[0m
+[0;32mI (1525525) LB_device_A: Sync sending - done[0m
+[0;32mI (1530525) LB_device_A: Sync sending - done[0m
+[0;32mI (1535525) LB_device_A: Sync sending - done[0m
+[0;32mI (1540525) LB_device_A: Sync sending - done[0m
+[0;32mI (1545525) LB_device_A: Sync sending - done[0m
+[0;32mI (1550525) LB_device_A: Sync sending - done[0m
+[0;32mI (1555525) LB_device_A: Sync sending - done[0m
+[0;32mI (1560525) LB_device_A: Sync sending - done[0m
+[0;32mI (1565525) LB_device_A: Sync sending - done[0m
+[0;32mI (1570525) LB_device_A: Sync sending - done[0m
+[0;32mI (1575525) LB_device_A: Sync sending - done[0m
+[0;32mI (1580525) LB_device_A: Sync sending - done[0m
+[0;32mI (1585525) LB_device_A: Sync sending - done[0m
+[0;32mI (1590525) LB_device_A: Sync sending - done[0m
+[0;32mI (1595525) LB_device_A: Sync sending - done[0m
+[0;32mI (1600525) LB_device_A: Sync sending - done[0m
+[0;32mI (1605525) LB_device_A: Sync sending - done[0m
+[0;32mI (1610525) LB_device_A: Sync sending - done[0m
+[0;32mI (1615525) LB_device_A: Sync sending - done[0m
+[0;32mI (1620525) LB_device_A: Sync sending - done[0m
+[0;32mI (1625525) LB_device_A: Sync sending - done[0m
+[0;32mI (1630525) LB_device_A: Sync sending - done[0m
+[0;32mI (1635525) LB_device_A: Sync sending - done[0m
+[0;32mI (1640525) LB_device_A: Sync sending - done[0m
+[0;32mI (1645525) LB_device_A: Sync sending - done[0m
+[0;32mI (1650525) LB_device_A: Sync sending - done[0m
+[0;32mI (1655525) LB_device_A: Sync sending - done[0m
+[0;32mI (1660525) LB_device_A: Sync sending - done[0m
+[0;32mI (1665525) LB_device_A: Sync sending - done[0m
+[0;32mI (1670525) LB_device_A: Sync sending - done[0m
+[0;32mI (1675525) LB_device_A: Sync sending - done[0m
+[0;32mI (1680525) LB_device_A: Sync sending - done[0m
+[0;32mI (1685525) LB_device_A: Sync sending - done[0m
+[0;32mI (1690525) LB_device_A: Sync sending - done[0m
+[0;32mI (1695525) LB_device_A: Sync sending - done[0m
+[0;32mI (1700525) LB_device_A: Sync sending - done[0m
+[0;32mI (1705525) LB_device_A: Sync sending - done[0m
+[0;32mI (1710525) LB_device_A: Sync sending - done[0m
+[0;32mI (1715525) LB_device_A: Sync sending - done[0m
+[0;32mI (1720525) LB_device_A: Sync sending - done[0m
+[0;32mI (1725535) LB_device_A: Sync sending - done[0m
+[0;32mI (1726385) LB_device_A: MS since started the Timer 1725857[0m
+[0;32mI (1727105) LB_device_A: Test break - done[0m
+[0;32mI (1730525) LB_device_A: Sync sending - done[0m
+[0;32mI (1735525) LB_device_A: Sync sending - done[0m
+[0;32mI (1736085) LB_device_A: MS since started the Timer 1735557[0m
+[0;32mI (1736115) LB_device_A: Test break - done[0m
+[0;32mI (1736125) LB_device_A: MS since started the Timer 1735602[0m
+[0;32mI (1737125) LB_device_A: Test break - done[0m
+[0;32mI (1738125) LB_device_A: MS since started the Timer 1737597[0m
+[0;32mI (1739135) LB_device_A: Test break - done[0m
+[0;32mI (1740525) LB_device_A: Sync sending - done[0m
+[0;32mI (1745005) LB_device_A: MS since started the Timer 1744478[0m
+[0;32mI (1745145) LB_device_A: Test break - done[0m
+[0;32mI (1745525) LB_device_A: Sync sending - done[0m
+[0;32mI (1746465) LB_device_A: MS since started the Timer 1745937[0m
+[0;32mI (1747155) LB_device_A: Test break - done[0m
+[0;32mI (1750525) LB_device_A: Sync sending - done[0m
+[0;32mI (1755525) LB_device_A: Sync sending - done[0m
+[0;32mI (1760525) LB_device_A: Sync sending - done[0m
+[0;32mI (1765525) LB_device_A: Sync sending - done[0m
+[0;32mI (1770525) LB_device_A: Sync sending - done[0m
+[0;32mI (1771845) LB_device_A: MS since started the Timer 1771321[0m
+[0;32mI (1772165) LB_device_A: Test break - done[0m
+[0;32mI (1775525) LB_device_A: Sync sending - done[0m
+[0;32mI (1780525) LB_device_A: Sync sending - done[0m
+[0;32mI (1785525) LB_device_A: Sync sending - done[0m
+[0;32mI (1790525) LB_device_A: Sync sending - done[0m
+[0;32mI (1795525) LB_device_A: Sync sending - done[0m
+[0;32mI (1800525) LB_device_A: Sync sending - done[0m
+[0;32mI (1805525) LB_device_A: Sync sending - done[0m
+[0;32mI (1810525) LB_device_A: Sync sending - done[0m
+[0;32mI (1815525) LB_device_A: Sync sending - done[0m
+[0;32mI (1820525) LB_device_A: Sync sending - done[0m
+[0;32mI (1825525) LB_device_A: Sync sending - done[0m
+[0;32mI (1830525) LB_device_A: Sync sending - done[0m
+[0;32mI (1835525) LB_device_A: Sync sending - done[0m
+[0;32mI (1840525) LB_device_A: Sync sending - done[0m
+[0;32mI (1845525) LB_device_A: Sync sending - done[0m
+[0;32mI (1850525) LB_device_A: Sync sending - done[0m
+[0;32mI (1852135) LB_device_A: MS since started the Timer 1851607[0m
+[0;32mI (1852175) LB_device_A: Test break - done[0m
+[0;32mI (1852225) LB_device_A: MS since started the Timer 1851692[0m
+[0;32mI (1853185) LB_device_A: Test break - done[0m
+[0;32mI (1855525) LB_device_A: Sync sending - done[0m
+[0;32mI (1857245) LB_device_A: MS since started the Timer 1856714[0m
+[0;32mI (1858195) LB_device_A: Test break - done[0m
+[0;32mI (1860525) LB_device_A: Sync sending - done[0m
+[0;32mI (1860605) LB_device_A: MS since started the Timer 1860080[0m
+[0;32mI (1861205) LB_device_A: Test break - done[0m
+[0;32mI (1862455) LB_device_A: MS since started the Timer 1861926[0m
+[0;32mI (1863215) LB_device_A: Test break - done[0m
+[0;32mI (1865525) LB_device_A: Sync sending - done[0m
+[0;32mI (1870535) LB_device_A: Sync sending - done[0m
+[0;32mI (1875525) LB_device_A: Sync sending - done[0m
+[0;32mI (1880525) LB_device_A: Sync sending - done[0m
+[0;32mI (1885525) LB_device_A: Sync sending - done[0m
+[0;32mI (1890525) LB_device_A: Sync sending - done[0m
+[0;32mI (1895525) LB_device_A: Sync sending - done[0m
+[0;32mI (1900535) LB_device_A: Sync sending - done[0m
+[0;32mI (1905525) LB_device_A: Sync sending - done[0m
+[0;32mI (1910525) LB_device_A: Sync sending - done[0m
+[0;32mI (1915525) LB_device_A: Sync sending - done[0m
+[0;32mI (1920525) LB_device_A: Sync sending - done[0m
+[0;32mI (1925525) LB_device_A: Sync sending - done[0m
+[0;32mI (1930525) LB_device_A: Sync sending - done[0m
+[0;32mI (1935525) LB_device_A: Sync sending - done[0m
+[0;32mI (1940525) LB_device_A: Sync sending - done[0m
+[0;32mI (1945525) LB_device_A: Sync sending - done[0m
+[0;32mI (1950525) LB_device_A: Sync sending - done[0m
+[0;32mI (1955525) LB_device_A: Sync sending - done[0m
+[0;32mI (1960525) LB_device_A: Sync sending - done[0m
+[0;32mI (1965525) LB_device_A: Sync sending - done[0m
+[0;32mI (1970525) LB_device_A: Sync sending - done[0m
+[0;32mI (1975525) LB_device_A: Sync sending - done[0m
+[0;32mI (1980525) LB_device_A: Sync sending - done[0m
+[0;32mI (1985525) LB_device_A: Sync sending - done[0m
+[0;32mI (1990525) LB_device_A: Sync sending - done[0m
+[0;32mI (1995525) LB_device_A: Sync sending - done[0m
+[0;32mI (2000525) LB_device_A: Sync sending - done[0m
+[0;32mI (2005525) LB_device_A: Sync sending - done[0m
+[0;32mI (2010525) LB_device_A: Sync sending - done[0m
+[0;32mI (2015525) LB_device_A: Sync sending - done[0m
+[0;32mI (2020525) LB_device_A: Sync sending - done[0m
+[0;32mI (2025525) LB_device_A: Sync sending - done[0m
+[0;32mI (2030525) LB_device_A: Sync sending - done[0m
+[0;32mI (2035525) LB_device_A: Sync sending - done[0m
+[0;32mI (2040525) LB_device_A: Sync sending - done[0m
+[0;32mI (2045525) LB_device_A: Sync sending - done[0m
+[0;32mI (2050525) LB_device_A: Sync sending - done[0m
+[0;32mI (2055525) LB_device_A: Sync sending - done[0m
+[0;32mI (2060525) LB_device_A: Sync sending - done[0m
+[0;32mI (2065525) LB_device_A: Sync sending - done[0m
+[0;32mI (2070525) LB_device_A: Sync sending - done[0m
+[0;32mI (2075535) LB_device_A: Sync sending - done[0m
+[0;32mI (2080525) LB_device_A: Sync sending - done[0m
+[0;32mI (2085525) LB_device_A: Sync sending - done[0m
+[0;32mI (2090525) LB_device_A: Sync sending - done[0m
+[0;32mI (2095525) LB_device_A: Sync sending - done[0m
+[0;32mI (2100525) LB_device_A: Sync sending - done[0m
+[0;32mI (2105525) LB_device_A: Sync sending - done[0m
+[0;32mI (2110525) LB_device_A: Sync sending - done[0m
+[0;32mI (2115525) LB_device_A: Sync sending - done[0m
+[0;32mI (2120525) LB_device_A: Sync sending - done[0m
+[0;32mI (2125525) LB_device_A: Sync sending - done[0m
+[0;32mI (2130525) LB_device_A: Sync sending - done[0m
+[0;32mI (2135525) LB_device_A: Sync sending - done[0m
+[0;32mI (2140525) LB_device_A: Sync sending - done[0m
+[0;32mI (2145525) LB_device_A: Sync sending - done[0m
+[0;32mI (2150525) LB_device_A: Sync sending - done[0m
+[0;32mI (2155525) LB_device_A: Sync sending - done[0m
+[0;32mI (2160525) LB_device_A: Sync sending - done[0m
+[0;32mI (2165525) LB_device_A: Sync sending - done[0m
+[0;32mI (2170525) LB_device_A: Sync sending - done[0m
+[0;32mI (2175525) LB_device_A: Sync sending - done[0m
+[0;32mI (2180525) LB_device_A: Sync sending - done[0m
+[0;32mI (2185525) LB_device_A: Sync sending - done[0m
+[0;32mI (2190525) LB_device_A: Sync sending - done[0m
+[0;32mI (2195525) LB_device_A: Sync sending - done[0m
+[0;32mI (2200525) LB_device_A: Sync sending - done[0m
+[0;32mI (2205525) LB_device_A: Sync sending - done[0m
+[0;32mI (2210525) LB_device_A: Sync sending - done[0m
+[0;32mI (2215525) LB_device_A: Sync sending - done[0m
+[0;32mI (2220525) LB_device_A: Sync sending - done[0m
+[0;32mI (2225525) LB_device_A: Sync sending - done[0m
+[0;32mI (2230525) LB_device_A: Sync sending - done[0m
+[0;32mI (2235525) LB_device_A: Sync sending - done[0m
+[0;32mI (2240525) LB_device_A: Sync sending - done[0m
+[0;32mI (2245525) LB_device_A: Sync sending - done[0m
+[0;32mI (2250535) LB_device_A: Sync sending - done[0m
+[0;32mI (2255525) LB_device_A: Sync sending - done[0m
+[0;32mI (2260525) LB_device_A: Sync sending - done[0m
+[0;32mI (2265525) LB_device_A: Sync sending - done[0m
+[0;32mI (2270525) LB_device_A: Sync sending - done[0m
+[0;32mI (2275525) LB_device_A: Sync sending - done[0m
+[0;32mI (2280525) LB_device_A: Sync sending - done[0m
+[0;32mI (2285525) LB_device_A: Sync sending - done[0m
+[0;32mI (2290525) LB_device_A: Sync sending - done[0m
+[0;32mI (2295525) LB_device_A: Sync sending - done[0m
+[0;32mI (2300525) LB_device_A: Sync sending - done[0m
+[0;32mI (2305525) LB_device_A: Sync sending - done[0m
+[0;32mI (2310525) LB_device_A: Sync sending - done[0m
+[0;32mI (2315525) LB_device_A: Sync sending - done[0m
+[0;32mI (2320525) LB_device_A: Sync sending - done[0m
+[0;32mI (2325525) LB_device_A: Sync sending - done[0m
+[0;32mI (2330525) LB_device_A: Sync sending - done[0m
+[0;32mI (2335525) LB_device_A: Sync sending - done[0m
+[0;32mI (2340525) LB_device_A: Sync sending - done[0m
+[0;32mI (2345525) LB_device_A: Sync sending - done[0m
+[0;32mI (2350525) LB_device_A: Sync sending - done[0m
+[0;32mI (2355525) LB_device_A: Sync sending - done[0m
+[0;32mI (2360525) LB_device_A: Sync sending - done[0m
+[0;32mI (2365525) LB_device_A: Sync sending - done[0m
+[0;32mI (2370525) LB_device_A: Sync sending - done[0m
+[0;32mI (2375525) LB_device_A: Sync sending - done[0m
+[0;32mI (2380525) LB_device_A: Sync sending - done[0m
+[0;32mI (2385525) LB_device_A: Sync sending - done[0m
+[0;32mI (2390525) LB_device_A: Sync sending - done[0m
+[0;32mI (2395525) LB_device_A: Sync sending - done[0m
+[0;32mI (2400525) LB_device_A: Sync sending - done[0m
+[0;32mI (2405525) LB_device_A: Sync sending - done[0m
+[0;32mI (2

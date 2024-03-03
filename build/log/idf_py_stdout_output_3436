@@ -1,0 +1,86 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\MyArchive\01_Aktuelle_Projekte\ESP32\LB_device_A\build\bootloader\esp-idf\esptool_py && C:\esp\tools\espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/esp/esp-idf-v5.1.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/MyArchive/01_Aktuelle_Projekte/ESP32/LB_device_A/build/bootloader/bootloader.bin"
+Bootloader binary size 0x51f0 bytes. 0x2e10 bytes (36%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/LB_device_A.c.obj
+C:/MyArchive/01_Aktuelle_Projekte/ESP32/LB_device_A/main/LB_device_A.c: In function 'example_espnow_recv_cb':
+C:/MyArchive/01_Aktuelle_Projekte/ESP32/LB_device_A/main/LB_device_A.c:181:33: warning: passing argument 1 of 'sendData_uart' makes pointer from integer without a cast [-Wint-conversion]
+  181 |         sendData_uart (myPayLoad.intVal_ms);
+      |                        ~~~~~~~~~^~~~~~~~~~
+      |                                 |
+      |                                 int
+C:/MyArchive/01_Aktuelle_Projekte/ESP32/LB_device_A/main/LB_device_A.c:152:31: note: expected 'const char *' but argument is of type 'int'
+  152 | int sendData_uart(const char* data)
+      |                   ~~~~~~~~~~~~^~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable LB_device_A.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.dev1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated C:/MyArchive/01_Aktuelle_Projekte/ESP32/LB_device_A/build/LB_device_A.bin
+[7/8] cmd.exe /C "cd /D C:\MyArchive\01_Aktuelle_Projekte\ESP32\LB_device_A\build\esp-idf\esptool_py && C:\esp\tools\espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/esp/esp-idf-v5.1.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/MyArchive/01_Aktuelle_Projekte/ESP32/LB_device_A/build/partition_table/partition-table.bin C:/MyArchive/01_Aktuelle_Projekte/ESP32/LB_device_A/build/LB_device_A.bin"
+LB_device_A.bin binary size 0xb9b60 bytes. Smallest app partition is 0x100000 bytes. 0x464a0 bytes (27%) free.
+[7/8] cmd.exe /C "cd /D C:\esp\esp-idf-v5.1.1\components\esptool_py && C:\esp\tools\espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/esp/esp-idf-v5.1.1 -D SERIAL_TOOL=C:/esp/tools/espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe;;C:/esp/esp-idf-v5.1.1/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/MyArchive/01_Aktuelle_Projekte/ESP32/LB_device_A/build -P C:/esp/esp-idf-v5.1.1/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32s3 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 LB_device_A.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.dev1
+Serial port COM3
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.1)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: 34:85:18:7a:f2:d4
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000c9fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 20976 bytes to 13324...
+Writing at 0x00000000... (100 %)
+Wrote 20976 bytes (13324 compressed) at 0x00000000 in 0.4 seconds (effective 476.4 kbit/s)...
+Hash of data verified.
+Compressed 760672 bytes to 481908...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001cb2d... (6 %)
+Writing at 0x00026837... (10 %)
+Writing at 0x0002bd3c... (13 %)
+Writing at 0x00035b97... (16 %)
+Writing at 0x0003bc85... (20 %)
+Writing at 0x00041bec... (23 %)
+Writing at 0x00047f51... (26 %)
+Writing at 0x0004e366... (30 %)
+Writing at 0x00054428... (33 %)
+Writing at 0x00059fb1... (36 %)
+Writing at 0x0005fb0f... (40 %)
+Writing at 0x00064a59... (43 %)
+Writing at 0x00069beb... (46 %)
+Writing at 0x0006ea16... (50 %)
+Writing at 0x00073e67... (53 %)
+Writing at 0x000790f1... (56 %)
+Writing at 0x0007e9fc... (60 %)
+Writing at 0x00084294... (63 %)
+Writing at 0x000899ed... (66 %)
+Writing at 0x0008f21d... (70 %)
+Writing at 0x000949ea... (73 %)
+Writing at 0x0009a248... (76 %)
+Writing at 0x0009fc0d... (80 %)
+Writing at 0x000a584f... (83 %)
+Writing at 0x000ab0f4... (86 %)
+Writing at 0x000b37f7... (90 %)
+Writing at 0x000bbcb5... (93 %)
+Writing at 0x000c1825... (96 %)
+Writing at 0x000c70f0... (100 %)
+Wrote 760672 bytes (481908 compressed) at 0x00010000 in 5.7 seconds (effective 1063.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 562.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
